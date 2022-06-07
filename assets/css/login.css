@@ -1,9 +1,27 @@
 .login-page{
     background: #100F22;
+    position: relative;
 }
+
+
 
 .login-area{
     padding: 30px 0;
+    position: relative;
+}
+
+.login-area::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 659px;
+    height: 538px;
+    right: -200px;
+    top: -150px;
+    background: radial-gradient(58.48% 56.31% at 72.66% 43.69%, rgba(220, 56, 99, 0.22) 0%, rgba(125, 92, 166, 0) 100%) ;
+    border-radius: 250.5px;
+    transform: matrix(0.97, -0.25, -0.25, -0.97, 0, 0);
+    z-index: 99;
 }
 
 .login-form-wrap{
@@ -156,7 +174,7 @@ a.forgot-link{
     border-radius: 8px;
     margin-bottom: 20px;
     border: 0 none;
-    background: #2D9CDB;
+    background: #4267B2;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
@@ -165,32 +183,32 @@ a.forgot-link{
 
 .api-login-btn i {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 18px;
     text-align: center;
     border-radius: 50%;
-    color: #2D9CDB;
+    color: #fff;
     margin-right: 5px;
 }
 
 .google-login{
-    background: #FF451C;
+    background: #EA4335;
 }
 
 .api-login-btn.google-login i{
-    color: #FF451C;
+    color: #fff;
 }
 
 
-.twitter-login{
-    background: #56CCF2;
+.apple-login{
+    background: #fff;
 }
 
-.api-login-btn.twitter-login i{
-    color: #56CCF2;
+.api-login-btn.apple-login i{
+    color: #000;
+}
+
+.api-login-btn.apple-login{
+    color: #000;
 }
 
 p.singup-link{
